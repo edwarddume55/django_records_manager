@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 def home(request):
 
-    return HttpResponse('Hello world!')
+    return render(request, 'base/index.html')
+
+    # return HttpResponse('Hello world!')
