@@ -7,7 +7,7 @@
 
     <hr>
 
-    <a class="btn btn-outline-primary btn-sm" href="{%url 'create_record'%}"> Create a record</a>
+    <a class="btn btn-outline-primary btn-sm" href="{%url 'create_record'%}"> Create a record &nbsp; <i class="fa fa-plus" aria-hidden="true"></i></a>
     <hr>
 
     <table class="table  table-hover table-bordered">
@@ -41,7 +41,7 @@
                 <td>{{record.country}}</td>
                 <td>{{record.creation_date}}</td>
 
-                <td><a href="{% url 'record' record.id %}">Click</a></td>
+                <td><a class="btn btn-secondary btn-sm" href="{% url 'record' record.id %}"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
             </tr>
                 {% endfor %}
             {% endif %}
